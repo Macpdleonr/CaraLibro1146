@@ -2,7 +2,7 @@
 //  HomeViewController.swift
 //  CaraLibro1146
 //
-//  Created by user191544 on 6/24/22.
+//  Created by user191544 on 6/25/22.
 //
 
 import UIKit
@@ -42,7 +42,8 @@ class HomeViewController: UIViewController {
         datosConsulta(email)
 
     }
-    func datosConsulta(_ sender: Any){
+    
+    private func datosConsulta(_ sender: Any){
         db.collection("usuarios").document(email).getDocument { (documentSnapshot, error) in
             if let document = documentSnapshot, error == nil{
                 if let name = document.get("nombre") as? String{
@@ -69,4 +70,5 @@ class HomeViewController: UIViewController {
     }
 
 }
+
 

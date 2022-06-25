@@ -2,7 +2,7 @@
 //  RegistroViewController.swift
 //  CaraLibro1146
 //
-//  Created by user191544 on 6/24/22.
+//  Created by user191544 on 6/25/22.
 //
 
 import UIKit
@@ -65,6 +65,8 @@ class RegistroViewController: UIViewController {
     }
 
     @IBAction func cancelRegisButtonAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
 
 }
+

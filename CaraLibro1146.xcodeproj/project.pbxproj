@@ -17,10 +17,10 @@
 		88511D172866390400064C1B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 88511D162866390400064C1B /* FirebaseDatabase */; };
 		88511D192866390400064C1B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 88511D182866390400064C1B /* FirebaseFirestore */; };
 		88511D1C28663CCC00064C1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88511D1B28663CCC00064C1B /* GoogleService-Info.plist */; };
-		888786AD2866583B00F61015 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888786AC2866583B00F61015 /* HomeViewController.swift */; };
-		888786B0286673FB00F61015 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888786AF286673FB00F61015 /* RegistroViewController.swift */; };
 		888786B32866856900F61015 /* SessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888786B22866856900F61015 /* SessionViewController.xib */; };
 		888786B7286691F200F61015 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 888786B6286691F200F61015 /* FirebaseFirestoreSwift */; };
+		88F104AB2866D312009AA4DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F104AA2866D312009AA4DB /* HomeViewController.swift */; };
+		88F104AD2866D32D009AA4DB /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F104AC2866D32D009AA4DB /* RegistroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +33,9 @@
 		88511D0A2866379000064C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88511D0C2866379000064C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88511D1B28663CCC00064C1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		888786AC2866583B00F61015 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		888786AF286673FB00F61015 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		888786B22866856900F61015 /* SessionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionViewController.xib; sourceTree = "<group>"; };
+		88F104AA2866D312009AA4DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		88F104AC2866D32D009AA4DB /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +81,9 @@
 				88511D092866379000064C1B /* LaunchScreen.storyboard */,
 				88511D0C2866379000064C1B /* Info.plist */,
 				88511D1B28663CCC00064C1B /* GoogleService-Info.plist */,
-				888786AC2866583B00F61015 /* HomeViewController.swift */,
-				888786AF286673FB00F61015 /* RegistroViewController.swift */,
 				888786B22866856900F61015 /* SessionViewController.xib */,
+				88F104AA2866D312009AA4DB /* HomeViewController.swift */,
+				88F104AC2866D32D009AA4DB /* RegistroViewController.swift */,
 			);
 			path = CaraLibro1146;
 			sourceTree = "<group>";
@@ -176,11 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F104AB2866D312009AA4DB /* HomeViewController.swift in Sources */,
 				88511D032866379000064C1B /* AuthViewController.swift in Sources */,
 				88511CFF2866379000064C1B /* AppDelegate.swift in Sources */,
+				88F104AD2866D32D009AA4DB /* RegistroViewController.swift in Sources */,
 				88511D012866379000064C1B /* SceneDelegate.swift in Sources */,
-				888786B0286673FB00F61015 /* RegistroViewController.swift in Sources */,
-				888786AD2866583B00F61015 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
