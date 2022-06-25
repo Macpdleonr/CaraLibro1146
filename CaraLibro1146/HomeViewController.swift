@@ -36,12 +36,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         // Do any additional setup after loading the view.
         title = "Inicio"
+        datosConsulta(email)
 
     }
-    func datosConsulta(){
+    func datosConsulta(_ sender: Any){
         db.collection("usuarios").document(email).getDocument { (documentSnapshot, error) in
             if let document = documentSnapshot, error == nil{
                 if let name = document.get("nombre") as? String{
