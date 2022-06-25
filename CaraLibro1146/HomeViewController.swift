@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 enum ProviderType:String{
     case basic
@@ -18,12 +20,18 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var closeSessionButton: UIButton!
     
     private let email:String
+    
     private let provider:ProviderType
+    
+    private let db = Firestore.firestore()
     
     init(email:String,provider:ProviderType){
         self.email = email
         self.provider = provider
-        super.init(nibName: <#T##String?#>, bundle: <#T##Bundle?#>)
+        super.init(nibName: "HomeViewController", bundle: nil)
+    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
@@ -31,19 +39,19 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "Inicio"
+
     }
     @IBAction func closeSessiionButtonAction(_ sender: Any) {
+        switch provider {
+        case .basic:
+            do {
+                try Auth.auth().signOut()
+                navigationController?.popViewController(animated: true)
+            } catch {
+                
+            }
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+

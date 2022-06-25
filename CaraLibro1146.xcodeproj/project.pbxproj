@@ -19,6 +19,8 @@
 		88511D1C28663CCC00064C1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88511D1B28663CCC00064C1B /* GoogleService-Info.plist */; };
 		888786AD2866583B00F61015 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888786AC2866583B00F61015 /* HomeViewController.swift */; };
 		888786B0286673FB00F61015 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888786AF286673FB00F61015 /* RegistroViewController.swift */; };
+		888786B32866856900F61015 /* SessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888786B22866856900F61015 /* SessionViewController.xib */; };
+		888786B7286691F200F61015 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 888786B6286691F200F61015 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		88511D1B28663CCC00064C1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		888786AC2866583B00F61015 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		888786AF286673FB00F61015 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		888786B22866856900F61015 /* SessionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 				88511D172866390400064C1B /* FirebaseDatabase in Frameworks */,
 				88511D152866390400064C1B /* FirebaseAuth in Frameworks */,
 				88511D192866390400064C1B /* FirebaseFirestore in Frameworks */,
+				888786B7286691F200F61015 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 			children = (
 				88511CFD2866379000064C1B /* CaraLibro1146 */,
 				88511CFC2866379000064C1B /* Products */,
+				888786B5286691F200F61015 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +83,16 @@
 				88511D1B28663CCC00064C1B /* GoogleService-Info.plist */,
 				888786AC2866583B00F61015 /* HomeViewController.swift */,
 				888786AF286673FB00F61015 /* RegistroViewController.swift */,
+				888786B22866856900F61015 /* SessionViewController.xib */,
 			);
 			path = CaraLibro1146;
+			sourceTree = "<group>";
+		};
+		888786B5286691F200F61015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +115,7 @@
 				88511D142866390400064C1B /* FirebaseAuth */,
 				88511D162866390400064C1B /* FirebaseDatabase */,
 				88511D182866390400064C1B /* FirebaseFirestore */,
+				888786B6286691F200F61015 /* FirebaseFirestoreSwift */,
 			);
 			productName = CaraLibro1146;
 			productReference = 88511CFB2866379000064C1B /* CaraLibro1146.app */;
@@ -151,6 +165,7 @@
 				88511D1C28663CCC00064C1B /* GoogleService-Info.plist in Resources */,
 				88511D082866379000064C1B /* Assets.xcassets in Resources */,
 				88511D062866379000064C1B /* Main.storyboard in Resources */,
+				888786B32866856900F61015 /* SessionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +407,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 88511D132866390400064C1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		888786B6286691F200F61015 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88511D132866390400064C1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
