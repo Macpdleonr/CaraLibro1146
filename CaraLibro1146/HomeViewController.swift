@@ -41,6 +41,20 @@ class HomeViewController: UIViewController {
         title = "Inicio"
 
     }
+    func datosConsulta(){
+        db.collection("usuarios").document(email).getDocument { (documentSnapshot, error) in
+            if let document = documentSnapshot, error == nil{
+                if let name = document.get("nombre") as? String{
+                    self.nameLabel.text = name
+                }
+                if let apellido = document.get("apellidos") as? String{
+                    self.lastNameLabel.text = apellido
+                }
+            }
+            <#code#>
+        }
+    }
+
     @IBAction func closeSessiionButtonAction(_ sender: Any) {
         switch provider {
         case .basic:
