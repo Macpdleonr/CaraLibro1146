@@ -53,7 +53,6 @@ class HomeViewController: UIViewController {
                     self.lastNameLabel.text = apellido
                 }
             }
-            <#code#>
         }
     }
 
